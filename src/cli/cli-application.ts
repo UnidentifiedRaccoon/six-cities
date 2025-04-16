@@ -7,7 +7,7 @@ export class CLIApplication {
 
   constructor(
     private readonly defaultCommand: string = CommandName.HELP
-  ) {}
+  ) { }
 
   public registerCommands(commandList: Command[]): void {
     commandList.forEach((command) => {
